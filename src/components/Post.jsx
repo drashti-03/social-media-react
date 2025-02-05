@@ -25,9 +25,9 @@ const Post = ({ post }) => {
               {tag}
             </span>
           ))}
-          <div className="alert alert-success mt-3 mx-0 mb-0" role="alert">
+{/*           <div className="alert alert-success mt-3 mx-0 mb-0" role="alert">
             This post has been reacted by {post.reactions} people.{" "}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
