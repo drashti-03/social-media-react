@@ -8,7 +8,7 @@ import { PostList } from "../store/post-list-store";
 
 const Post = ({ post }) => {
   const { deletePost } = useContext(PostList);
-  const reactions = post.reactions !== undefined ? post.reactions : { likes: 0, dislikes: 0 };
+
   return (
     <div>
       <div className="card post-card m-4 w-75" style={{ width: "18rem" }}>
@@ -29,7 +29,7 @@ const Post = ({ post }) => {
             </span>
           ))}
           <div className="alert alert-success mt-3 mx-0 mb-0" role="alert">
-            This post has been reacted by {post.reactions} people.{" "}
+            This post has been reacted by {post.reactions.likes} people.{" "}
           </div>
         </div>
       </div>
